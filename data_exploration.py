@@ -11,6 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import matplotlib.pyplot as plt
+import pandas as pd
 
 base_dir = "/home/jpbreuer/alibaba-ai/"
 path_training = os.path.join(base_dir, "training.h5")
@@ -53,6 +54,90 @@ s1c0 = list()
 for item in list(range(1000)):
     s1c0.append(sen1[c0index[item]])
 
+c1index = np.where(pclass==1)[0]
+s1c1 = list()
+for item in list(range(1000)):
+    s1c1.append(sen1[c1index[item]])
+
+c2index = np.where(pclass==2)[0]
+s1c2 = list()
+for item in list(range(1000)):
+    s1c2.append(sen1[c2index[item]])
+
+c3index = np.where(pclass==3)[0]
+s1c3 = list()
+for item in list(range(1000)):
+    s1c3.append(sen1[c3index[item]])
+
+c4index = np.where(pclass==4)[0]
+s1c4 = list()
+for item in list(range(1000)):
+    s1c4.append(sen1[c4index[item]])
+    
+c5index = np.where(pclass==5)[0]
+s1c5 = list()
+for item in list(range(1000)):
+    s1c5.append(sen1[c5index[item]])
+
+c6index = np.where(pclass==6)[0]
+s1c6 = list()
+for item in list(range(1000)):
+    s1c6.append(sen1[c6index[item]])
+
+c7index = np.where(pclass==7)[0]
+s1c7 = list()
+for item in list(range(1000)):
+    s1c7.append(sen1[c7index[item]])
+
+c8index = np.where(pclass==8)[0]
+s1c8 = list()
+for item in list(range(1000)):
+    s1c8.append(sen1[c8index[item]])
+
+c9index = np.where(pclass==9)[0]
+s1c9 = list()
+for item in list(range(1000)):
+    s1c9.append(sen1[c9index[item]])
+
+c10index = np.where(pclass==10)[0]
+s1c10 = list()
+for item in list(range(1000)):
+    s1c10.append(sen1[c10index[item]])
+
+c11index = np.where(pclass==11)[0]
+s1c11 = list()
+for item in list(range(1000)):
+    s1c11.append(sen1[c11index[item]])
+
+c12index = np.where(pclass==12)[0]
+s1c12 = list()
+for item in list(range(1000)):
+    s1c12.append(sen1[c12index[item]])
+
+c13index = np.where(pclass==13)[0]
+s1c13 = list()
+for item in list(range(1000)):
+    s1c13.append(sen1[c13index[item]])
+
+c14index = np.where(pclass==14)[0]
+s1c14 = list()
+for item in list(range(1000)):
+    s1c14.append(sen1[c14index[item]])
+
+c15index = np.where(pclass==15)[0]
+s1c15 = list()
+for item in list(range(1000)):
+    s1c15.append(sen1[c15index[item]])
+
+c16index = np.where(pclass==16)[0]
+s1c16 = list()
+for item in list(range(1000)):
+    s1c16.append(sen1[c16index[item]])
+
+
+
+#sen1frame = [sen1,label]
+#sen1df = pd.DataFrame(data=sen1,index=label)#(columns = 'sen1,label',rows = 'label')
 #%% 
 
 # visualization, plot the first pair of Sentinel-1 and Sentinel-2 patches of training.h5
