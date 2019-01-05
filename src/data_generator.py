@@ -16,15 +16,15 @@ class AugumentedHDF5Matrix(HDF5Matrix):
         x = super().__getitem__(key)
         self.i += 1
         x = x[:,:,:]
-        bgr = x[:,:,0:3]
-        rgb = bgr[...,::-1]
-        if len(x.shape) == 3:
-            return self.image_datagen.random_transform(
-                rgb, seed=self.seed + self.i)
-        else:
-            return np.array([
-                self.image_datagen.random_transform(
-                    xx, seed=self.seed + self.i) for xx in x
+#        bgr = x[:,:,0:3]
+#        rgb = bgr[...,::-1]
+#        if len(x.shape) == 3:
+#            return self.image_datagen.random_transform(
+#                rgb, seed=self.seed + self.i)
+#        else:
+        return np.array([
+            self.image_datagen.random_transform(
+                xx, seed=self.seed + self.i) for xx in x
             ])
 
 class DataSet:
