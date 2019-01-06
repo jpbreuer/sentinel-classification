@@ -13,7 +13,7 @@ from keras.callbacks import ModelCheckpoint
 
 #Custom libraries
 from data_generator import DataSet
-from model import Model
+from model import Zoolander
 
 # PATHS
 DATA_PATH = '../data/'
@@ -36,8 +36,8 @@ train_dataset = DataSet(TRAIN_PATH)
 val_dataset = DataSet(VALID_PATH)
 
 num_classes = len(val_dataset.classes)
-classifier = Model(num_classes)
-print("Model assambled")
+classifier = Zoolander(num_classes)
+print("Model assembled")
 import IPython
 IPython.embed()
 
